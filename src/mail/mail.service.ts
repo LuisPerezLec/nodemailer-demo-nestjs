@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { MailerService } from '@nestjs-modules/mailer';
+import { join } from 'path';
 
 @Injectable()
 export class MailService {
@@ -11,8 +12,7 @@ export class MailService {
         to: 'luigiperez2002@gmail.com', // list of receivers
         from: 'pruebas.informatica@upa.edu.mx', // sender address
         subject: 'Testing Nest MailerModule ✔', // Subject line
-        text: 'welcome', // plaintext body
-        html: '<b>welcome</b>', // HTML body content
+        template: 'index',
       })
       .then()
       .catch(() => {});
