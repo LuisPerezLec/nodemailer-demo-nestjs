@@ -22,7 +22,6 @@ import { join } from 'path';
       },
       defaults: {
         from: '"nest-modules" <modules@nestjs.com>',
-        preview: true,
       },
       template: {
         dir: join(__dirname, '..','src', 'templates'),
@@ -31,7 +30,7 @@ import { join } from 'path';
           strict: true,
         },
       },
-      preview: true,
+      // preview: true, // Shows email in browser
     }),
   ],
   controllers: [AppController],

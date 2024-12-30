@@ -13,6 +13,7 @@ export class MailService {
         from: 'pruebas.informatica@upa.edu.mx', // sender address
         subject: 'Testing Nest MailerModule ✔', // Subject line
         template: 'index',
+        context: { name: 'Aspirante' },
         attachments: [
           {
             filename: 'image-1.png',
