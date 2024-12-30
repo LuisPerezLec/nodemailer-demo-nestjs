@@ -7,6 +7,8 @@ import { MailService } from './mail/mail.service';
 import { ConfigModule } from '@nestjs/config';
 import { join } from 'path';
 
+console.log(`El directorio es ${__dirname}`);
+
 @Module({
   imports: [
     ConfigModule.forRoot({ envFilePath: '.env', isGlobal: true }),
@@ -24,7 +26,7 @@ import { join } from 'path';
         from: '"nest-modules" <modules@nestjs.com>',
       },
       template: {
-        dir: join(__dirname, '..','src', 'templates'),
+        dir: join(__dirname, 'templates'),
         adapter: new HandlebarsAdapter(),
         options: {
           strict: true,
