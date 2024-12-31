@@ -5,7 +5,7 @@ import { MailService } from './mail/mail.service';
 export class AppService {
   constructor(private readonly mailService: MailService) {}
   getHello(): string {
-    this.mailService.example();
+    this.mailService.sendConfirmationEmail("test@testemail.com", { name: "Aspirante"});
     return 'Hello World!';
   }
 }

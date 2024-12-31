@@ -32,7 +32,7 @@ console.log(`El directorio es ${__dirname}`);
           strict: true,
         },
       },
-      // preview: true, // Shows email in browser
+      preview: true, // Shows email in browser
     }),
   ],
   controllers: [AppController],
