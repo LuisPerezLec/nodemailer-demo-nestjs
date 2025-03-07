@@ -8,4 +8,4 @@ export class AppService {
     this.mailService.sendConfirmationEmail("test@testemail.com", { name: "Aspirante"});
     return 'Hello World!';
   }
-}
+} //Comment
